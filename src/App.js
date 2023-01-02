@@ -13,12 +13,12 @@ function App() {
   //handle click on numbers
   const numberHandler = (e) => {
     var operator1 = operandOne + e.target.textContent;
-    if (operator === "") {
+    if (operator === "" && operandOne.length < 9) {
       setResult(operator1);
       setOperandOne(operator1);
     }
 
-    if (operandOne !== "" && operator !== "") {
+    if (operandOne !== "" && operator !== "" && operandTwo.length < 9) {
       var operator2 = operandTwo + e.target.textContent;
       setOperandTwo(operator2);
       setResult(operator2);
@@ -64,6 +64,7 @@ function App() {
       if (operator === "-") res = x - y;
       if (operator === "*") res = y * x;
       if (operator === "/") res = x / y;
+      res = res.toPrecision(4);
       setOperandOne(res);
       setOperator("");
       setOperandTwo("");
@@ -83,6 +84,7 @@ function App() {
 
   return (
     <div className="App">
+      {console.log("sda:", operandOne, operator, operandTwo)}
       <div className="calculator-container">
         <ResultContainer result={result} />
         <ButtonContainer
