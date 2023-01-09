@@ -59,20 +59,19 @@ function App() {
     if (operandOne !== "" && operator !== "" && operandTwo !== "") {
       var index1 = operandOne.indexOf(".");
       var index2 = operandTwo.indexOf(".");
-      var x, y;
-      if (index1 || index2) {
-        x = parseFloat(operandOne);
-        y = parseFloat(operandTwo);
-      } else {
-        x = parseInt(operandOne);
-        y = parseInt(operandTwo);
-      }
+      //console.log(index1);
+      //console.log(index2);
+      var x = parseFloat(operandOne);
+      var y = parseFloat(operandTwo);
       var res;
       if (operator === "+") res = y + x;
       if (operator === "-") res = x - y;
       if (operator === "*") res = y * x;
       if (operator === "/") res = x / y;
       res = res.toPrecision(4);
+      if (index1 === -1 && index2 === -1) {
+        res = parseInt(res);
+      }
       setOperandOne(res);
       setOperator("");
       setOperandTwo("");
@@ -92,7 +91,6 @@ function App() {
 
   return (
     <div className="App">
-      {console.log("sda:", operandOne, operator, operandTwo)}
       <div className="calculator-container">
         <ResultContainer result={result} />
         <ButtonContainer
