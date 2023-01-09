@@ -57,8 +57,16 @@ function App() {
   //handle result calculation on equal to button click
   const calculation = () => {
     if (operandOne !== "" && operator !== "" && operandTwo !== "") {
-      var x = parseFloat(operandOne);
-      var y = parseFloat(operandTwo);
+      var index1 = operandOne.indexOf(".");
+      var index2 = operandTwo.indexOf(".");
+      var x, y;
+      if (index1 || index2) {
+        x = parseFloat(operandOne);
+        y = parseFloat(operandTwo);
+      } else {
+        x = parseInt(operandOne);
+        y = parseInt(operandTwo);
+      }
       var res;
       if (operator === "+") res = y + x;
       if (operator === "-") res = x - y;
