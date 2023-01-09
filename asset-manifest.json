@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/iphoneCalculator/static/css/main.c7aaeda3.css",
-    "main.js": "/iphoneCalculator/static/js/main.44ea264d.js",
+    "main.js": "/iphoneCalculator/static/js/main.a031aedf.js",
     "index.html": "/iphoneCalculator/index.html",
     "main.c7aaeda3.css.map": "/iphoneCalculator/static/css/main.c7aaeda3.css.map",
-    "main.44ea264d.js.map": "/iphoneCalculator/static/js/main.44ea264d.js.map"
+    "main.a031aedf.js.map": "/iphoneCalculator/static/js/main.a031aedf.js.map"
   },
   "entrypoints": [
     "static/css/main.c7aaeda3.css",
-    "static/js/main.44ea264d.js"
+    "static/js/main.a031aedf.js"
   ]
 }
