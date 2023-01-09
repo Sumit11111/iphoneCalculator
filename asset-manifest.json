@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iphoneCalculator/static/css/main.c7aaeda3.css",
+    "main.js": "/iphoneCalculator/static/js/main.9227d134.js",
+    "index.html": "/iphoneCalculator/index.html",
+    "main.c7aaeda3.css.map": "/iphoneCalculator/static/css/main.c7aaeda3.css.map",
+    "main.9227d134.js.map": "/iphoneCalculator/static/js/main.9227d134.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7aaeda3.css",
+    "static/js/main.9227d134.js"
+  ]
+}
