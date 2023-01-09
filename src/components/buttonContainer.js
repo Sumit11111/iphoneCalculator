@@ -1,4 +1,4 @@
-const buttonContainer = (props) => {
+function buttonContainer(props) {
   return (
     <div className="button-container">
       <button
@@ -156,6 +156,6 @@ const buttonContainer = (props) => {
       </button>
     </div>
   );
-};
+}
 
 export default buttonContainer;

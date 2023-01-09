@@ -1,4 +1,4 @@
-const resultContainer = (props) => {
+function resultContainer(props) {
   return (
     <div className="result-container">
       <div>
@@ -6,6 +6,6 @@ const resultContainer = (props) => {
       </div>
     </div>
   );
-};
+}
 
 export default resultContainer;
